@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply bg-[#229954] py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[20px];
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+  transform: translateY(5px);
+  box-shadow: inset 0 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.form:focus ~ label,
+.form:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #196f3d;;
+  font-size: 12px;
+}
+
